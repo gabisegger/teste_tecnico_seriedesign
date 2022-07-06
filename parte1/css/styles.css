@@ -1,2 +1,69 @@
-/* Coloque o CSS neste arquivo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.center {
+    max-width: 1170px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 114px;
+}
+
+#txtSearch {
+    width: 198px;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+#txtSearch::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #7f7f7f
+}
+
+#lupa {
+    position: relative;
+    top: 6px;
+    left: -40px;
+}
+
+.logo {
+    width: 271px;
+    height: 68px;
+}
+
+#login {
+    width: 19px;
+    height: 25px;
+}
+
+#carrinho {
+    width: 31px;
+    height: 27px;
+}
+
+.qtd {
+    width: 20px;
+    height: 20px;
+    background-color: #ffa200;
+    border-radius: 100%;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #ffffff;
+    position: relative;
+    right: 10px;
+    top: -20px;
+}
