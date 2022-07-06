@@ -18,6 +18,10 @@
     height: 114px;
 }
 
+#search {
+    position: relative;
+}
+
 #txtSearch {
     width: 198px;
     height: 45px;
@@ -33,9 +37,11 @@
 }
 
 #lupa {
-    position: relative;
-    top: 6px;
-    left: -40px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .logo {
@@ -53,6 +59,15 @@
     height: 27px;
 }
 
+#header-actions {
+    position: relative;
+    width: 198px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 10px;
+}
+
 .qtd {
     width: 20px;
     height: 20px;
@@ -63,7 +78,38 @@
     font-weight: 400;
     font-size: 10px;
     color: #ffffff;
-    position: relative;
-    right: 10px;
-    top: -20px;
+    position: absolute;
+    right: -1px;
+    top: -8px;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #8158c5;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.categories {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.category {
+    padding: 0 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.menu-hamburger {
+    padding-left: 32px;
 }
