@@ -120,6 +120,10 @@ li {
     padding-left: 32px;
 }
 
+main {
+    padding-bottom: 129px;
+}
+
 .block-2 {
     background-color: #ffa200;
     padding: 18px 0;
@@ -139,6 +143,44 @@ li {
 
 .products {
     display: flex;
+    justify-content: space-between;
+}
+
+.destaques {
+    padding-bottom: 20px;
+}
+
+.product img {
+    width: 279px;
+    padding-bottom: 17px;
+}
+
+.description-product {
+    text-align: center;
+    padding-bottom: 9px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.price {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.price span {
+    text-decoration: line-through;
+    text-decoration: line-through;
+    padding-right: 4px;
+}
+
+.installment-price {
+    padding-top: 4px;
+    text-align: center;
+}
+
+.block-4 {
+    padding-top: 129px;
 }
 
 .pets {
