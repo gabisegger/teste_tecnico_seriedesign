@@ -120,6 +120,35 @@ li {
     padding-left: 32px;
 }
 
+.block-2 {
+    background-color: #ffa200;
+    padding: 18px 0;
+}
+
+.category-banner {
+    height: 100px;
+}
+
+.title-category {
+    font-weight: 600;
+    font-size: 24px;
+    color: #7f7f7f;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.products {
+    display: flex;
+}
+
+.pets {
+    display: flex;
+    gap: 18px;
+}
+
+.banner-pet {
+    width: 576px;
+}
 
 .newsletter {
     background-color: #8158c5;
@@ -251,6 +280,11 @@ li {
 .payments {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.payment {
+    width: 44px;
 }
 
 .copyright {
