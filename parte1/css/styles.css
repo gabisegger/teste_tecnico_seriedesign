@@ -94,7 +94,7 @@ li {
 
 .navbar {
     background-color: #8158c5;
-    height: 50px;
+    height: auto;
     display: flex;
     align-items: center;
 }
@@ -109,19 +109,82 @@ li {
     gap: 10px;
 }
 
-.category a {
+.category {
+    height: 50px;
+    display: flex;
+    align-items: center;
     padding: 0 15px;
-    font-weight: 300;
     font-size: 14px;
-    color: #ffffff !important;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+
+.category:hover {
+    background-color: #ffa200;
+    color: #8158c5;
 }
 
 .menu-hamburger {
     padding-left: 32px;
+    height: 22px;
+    margin: auto;
+    cursor: pointer;
 }
 
 main {
     padding-bottom: 129px;
+}
+
+.block-1 {
+    overflow: hidden;
+    position: relative;
+}
+
+.block-1 .slick-arrow {
+    position: absolute;
+    z-index: 9;
+    width: 47px;
+    top: 0;
+    bottom: 0;
+    height: 45px;
+    margin: auto;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.block-1 .slick-arrow::after {
+    content: "";
+    width: 83px;
+    height: 40px;
+    display: block;
+    border-top: 7px solid #7f7f7f;
+    border-right: 7px solid #7f7f7f;
+    transition: all 0.3s;
+}
+
+.block-1 .slick-arrow:hover::after {
+    border-color: #ffa200;
+}
+
+.block-1 .slick-prev {
+    left: 100px;
+}
+
+.block-1 .slick-prev::after {
+    transform: rotate(-140deg);
+}
+
+.block-1 .slick-next {
+    right: 117px;
+}
+
+.block-1 .slick-next::after {
+    transform: rotate(45deg);
 }
 
 .block-2 {
@@ -131,6 +194,11 @@ main {
 
 .category-banner {
     height: 100px;
+    transition: all 0.5s;
+}
+
+.category-banner:hover {
+    filter: drop-shadow(5px 10px 5px rgba(0,0,0,.5));
 }
 
 .title-category {
@@ -141,18 +209,22 @@ main {
     padding: 40px 0;
 }
 
-.products {
-    display: flex;
-    justify-content: space-between;
-}
-
 .destaques {
     padding-bottom: 20px;
 }
 
+.products .slick-list {
+    width: 100%;
+    overflow: hidden;
+}
+
 .product img {
-    width: 279px;
+    max-width: 279px;
     padding-bottom: 17px;
+}
+
+.products .slick-slide {
+    display: inline-block;
 }
 
 .description-product {
@@ -200,8 +272,9 @@ main {
     border-bottom: 2px solid #ffa200;
     display: flex;
     justify-content: space-around;
-    height: 67px;
+    height: auto;
     align-items: center;
+    padding: 14px 0;
 }
 
 .icon-logo {
@@ -296,6 +369,25 @@ main {
 
 .social-media {
     margin-bottom: 23px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.social-media span {
+    background-color: #7f7f7f;
+    display: block;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.social-media span:hover{
+    background-color: #ffa200;
 }
 
 .store-address {
@@ -334,8 +426,9 @@ main {
     justify-content: center;
     align-items: center;
     gap: 26px;
-    height: 58px;
+    height: auto;
     border-top: 1px solid #f0f0f0;
+    padding: 18px 0 16px;
 }
 
 .copyright p {
