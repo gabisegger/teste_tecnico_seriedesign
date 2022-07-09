@@ -171,25 +171,35 @@ main {
     border-color: #ffa200;
 }
 
-.block-1 .slick-prev {
-    left: 100px;
-}
-
 .block-1 .slick-prev::after {
     transform: rotate(-140deg);
-}
-
-.block-1 .slick-next {
-    right: 117px;
 }
 
 .block-1 .slick-next::after {
     transform: rotate(45deg);
 }
 
+.block-1 .slick-track {
+    display: flex;
+}
+
+.banner {
+    display: inline-block;
+}
+
+.fullbanner {
+    display: block;
+    width: 100%;
+}
+
 .block-2 {
     background-color: #ffa200;
     padding: 18px 0;
+}
+
+.banner-categories {
+    display: flex;
+    justify-content: space-between;
 }
 
 .category-banner {
@@ -358,6 +368,13 @@ main {
     padding: 52px 0 40px;
 }
 
+.button-fixed {
+    position: fixed;
+    bottom: 306px;
+    right: 272px;
+    display: grid;
+}
+
 .information {
     text-align: center;
 }
@@ -438,4 +455,14 @@ main {
 
 .logo-seriedesign {
     width: 57px;
+}
+
+@media (min-width: 1170px) {
+    .block-1 .slick-prev {
+        left: calc(50% - 578px);
+    }
+
+    .block-1 .slick-next {
+        right: calc(50% - 578px);
+    }
 }
