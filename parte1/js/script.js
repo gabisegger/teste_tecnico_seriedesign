@@ -12,8 +12,9 @@ $('.products').slick({
     arrows: false,
     infinite: true,
     slidesToShow: 4,
-    slidesToScroll: 4,
-    autoplaySpeed: 2000
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000
 });
 
 //Click para ir para o topo da página
