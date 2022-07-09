@@ -15,7 +15,7 @@
     margin: 0 auto;
 }
 
-a {
+a, button {
     cursor: pointer;
 }
 
@@ -359,7 +359,6 @@ main {
     color: #ffffff;
     background-color: #ffa200;
     border: none;
-    cursor: pointer;
 }
 
 .container {
@@ -370,9 +369,14 @@ main {
 
 .button-fixed {
     position: fixed;
-    bottom: 306px;
-    right: 272px;
+    bottom: 20px;
+    right: 20px;
     display: grid;
+}
+
+.go-to-top {
+    background: none;
+    border: none;
 }
 
 .information {
