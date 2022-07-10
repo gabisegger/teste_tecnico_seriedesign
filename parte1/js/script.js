@@ -13,11 +13,20 @@ $('.products').slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    //autoplay: true,
     autoplaySpeed: 5000
 });
 
 //Click para ir para o topo da página
 $('.button-fixed').on('click', function(){
     $("html, body").animate({ scrollTop: 0 }, "slow");
+})
+
+//Header fixo
+$(window).on('scroll', function(){
+    if(window.scrollY >= 170){
+        $('header').addClass('fixed')
+    } else{
+        $('header').removeClass('fixed')
+    }
 })

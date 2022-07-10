@@ -18,31 +18,80 @@
 		<div class="header center">
 			<div id="search">
 				<input type="text" id="txtSearch" placeholder="Pesquisar..."/>
-				<a><img src="./img/lupa.svg" id="lupa" alt="Pesquisar"/></a>
+				<a href="#"><img src="./img/lupa.svg" id="lupa" alt="Pesquisar"/></a>
 			</div>
-			<img src="./img/logo.png" class="logo" alt="Logo"/>
+			<a href="#"><img src="./img/logo.png" class="logo" alt="Logo"/></a>
 			<div id="header-actions">
-				<a><img src="./img/login.png" id="login" alt="Login"/></a>
-				<a><img src="./img/carrinho.png" id="carrinho" alt="Carrinho"/></a>
+				<a href="#"><img src="./img/login.png" id="login" alt="Login"/></a>
+				<a href="#"><img src="./img/carrinho.png" id="carrinho" alt="Carrinho"/></a>
 				<span class="qtd">99</span>
 			</div>
 		</div>
 		<nav class="navbar">
 			<div class="menu center">
 				<ul class="categories">
-					<a><li class="category">Categoria lorem</li></a>
-					<a><li class="category">Categoria</li></a>
-					<a><li class="category">Categoria lorem ipsum</li></a>
-					<a><li class="category">Categoria lorem</li></a>
-					<a><li class="category">Categoria</li></a>
-					<a><li class="category">Categoria lorem ipsum</li></a>
-					<a><li class="category">Categoria ipsum</li></a>
+					<li class="category">
+						<a href="#" class="menu-title">Categoria lorem</a>
+						<ul class="sub-menu level-2">
+							<li class="submenu-item">
+								<a href="#" class="submenu-title">Categoria</a>
+							</li>
+							<li class="submenu-item">
+								<a href="#" class="submenu-title">Categoria lorem ipsum</a>
+							</li>
+							<li class="submenu-item">
+								<a href="#" class="submenu-title">Categoria lorem</a>
+								<ul class="submenu level-3">
+									<li class="submenu-item">
+										<a href="#" class="submenu-title">Categoria</a>
+									</li>
+									<li class="submenu-item">
+										<a href="#" class="submenu-title">Categoria lorem ipsum</a>
+									</li>
+									<li class="submenu-item">
+										<a href="#" class="submenu-title">Categoria</a>
+									</li>
+									<li class="submenu-item">
+										<a href="#" class="submenu-title">Categoria</a>
+									</li>
+									<li class="submenu-item">
+										<a href="#" class="submenu-title">Categoria lorem ipsum</a>
+									</li>
+								</ul>
+							</li>
+							<li class="submenu-item">
+								<a href="#" class="submenu-title">Categoria</a>
+							</li>
+							<li class="submenu-item">
+								<a href="#" class="submenu-title">Categoria lorem ipsum</a>
+							</li>
+						</ul>
+					</li>
+					<li class="category">
+						<a href="#" class="menu-title">Categoria</a>
+					</li>
+					<li class="category">
+						<a href="#" class="menu-title">Categoria lorem ipsum</a>
+					</li>
+					<li class="category">
+						<a href="#" class="menu-title">Categoria lorem</a>
+					</li>
+					<li class="category">
+						<a href="#" class="menu-title">Categoria</a>
+					</li>
+					<li class="category">
+						<a href="#" class="menu-title">Categoria lorem ipsum</a>
+					</li>
+					<li class="category">
+						<a href="#" class="menu-title">Categoria ipsum</a>
+					</li>
 				</ul>	
 				<img src="./img/menu-hamburger.svg" class="menu-hamburger" alt="Menu"/>
 			</div>
 		</nav>
 	</header>
 	<main>
+		<h1 class="home-title">Pet Store - Conheça nossa loja</h1>
 		<section class="block-1">
 			<div class="banner"><img src="./img/full-banner.jpg" class="fullbanner" alt="Fullbanner pets"/></div>
 			<div class="banner"><img src="./img/full-banner.jpg" class="fullbanner" alt="Fullbanner pets"/></div>
@@ -50,14 +99,14 @@
 		</section>
 		<section class="block-2">
 			<div class="banner-categories center">
-				<a><img src="./img/banner-racoes.jpg" class="category-banner" alt="Banner categoria rações"/></a>
-				<a><img src="./img/banner-brinquedos.jpg" class="category-banner" alt="Banner categoria brinquedos"/></a>
-				<a><img src="./img/banner-acessorios.jpg" class="category-banner" alt="Banner categoria acessórios"/></a>
+				<a href="#"><img src="./img/banner-racoes.jpg" class="category-banner" alt="Banner categoria rações"/></a>
+				<a href="#"><img src="./img/banner-brinquedos.jpg" class="category-banner" alt="Banner categoria brinquedos"/></a>
+				<a href="#"><img src="./img/banner-acessorios.jpg" class="category-banner" alt="Banner categoria acessórios"/></a>
 			</div>
 		</section>
 		<section class="block-3">
 			<div class="center">
-				<p class="title-category">Novidades</p>
+				<h2 class="title-category">Novidades</h2>
 				<div class="products">
 					<div class="product">
 						<div class="box-image">
@@ -176,8 +225,8 @@
 		</section>
 		<section class="block-4">
 			<div class="pets center">
-				<img src="./img/banner-cat.jpg" class="banner-pet" alt="Banner produtos para gatos"/>
-				<img src="./img/banner-dog.jpg" class="banner-pet" alt="Banner produtos para cachorros"/>
+				<a href="#"><img src="./img/banner-cat.jpg" class="banner-pet" alt="Banner produtos para gatos"/></a>
+				<a href="#"><img src="./img/banner-dog.jpg" class="banner-pet" alt="Banner produtos para cachorros"/></a>
 			</div>
 		</section>
 		<section class="block-5">
@@ -429,40 +478,40 @@
 				<div class="form-newsletter">
 					<p class="title-newsletter">Assine nossa newsletter</p>
 					<p class="subtitle-newsletter">Cadastre-se para receber nossas novidades e descontos exclusivo</p>
-					<div class="form-news">
+					<form class="form-news">
 						<input type="text" class="txtNewsletter name" placeholder="Nome"/>
 						<input type="email" class="txtNewsletter email" placeholder="Email"/>
 						<button type="submit" class="btn-form">Enviar</button>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>
 		<div class="container center">
 			<div class="information">
-				<img src="./img/logo.png" class="logo-footer" alt="Logo"/>
+				<a href="#"><img src="./img/logo.png" class="logo-footer" alt="Logo"/></a>
 				<div class="social-media">
-					<a><span><img src="./img/facebook.svg" class="icon" alt="Facebook"/></span></a>
-					<a><span><img src="./img/instagram.svg" class="icon" alt="Instagram"/></span></a>
-					<a><span><img src="./img/twitter.svg" class="icon" alt="Twitter"/></span></a>
+					<a target="_blank" href="#"><span><img src="./img/facebook.svg" class="icon" alt="Facebook"/></span></a>
+					<a target="_blank" href="#"><span><img src="./img/instagram.svg" class="icon" alt="Instagram"/></span></a>
+					<a target="_blank" href="#"><span><img src="./img/twitter.svg" class="icon" alt="Twitter"/></span></a>
 				</div>
-				<p class="store-address">© 2019  •  CNPJ 00.000.000/0000-00</p>
-				<p class="store-address">Rua Tal de Tal, 123 - Cidade</p>
+				<p class="store-info">© 2019  •  CNPJ 00.000.000/0000-00</p>
+				<address class="store-info">Rua Tal de Tal, 123 - Cidade</address>
 			</div>
-			<div class="institutional">
+			<nav class="institutional">
 				<p class="title-menu">Pet store</p>
 				<ul class="menu-footer">
-					<li class="item"><a>Quem Somos</a></li>
-					<li class="item"><a>Como Comprar</a></li>
-					<li class="item"><a>Trocas e Devoluções</a></li>
-					<li class="item"><a>Frete e Entregas</a></li>
+					<li class="item"><a href="#">Quem Somos</a></li>
+					<li class="item"><a href="#">Como Comprar</a></li>
+					<li class="item"><a href="#">Trocas e Devoluções</a></li>
+					<li class="item"><a href="#">Frete e Entregas</a></li>
 				</ul>	
-			</div>
+			</nav>
 			<div class="contact">
 				<p class="title-menu">Contato</p>
 				<ul class="menu-footer">
-					<li class="item"><a>(99) 9999-9999</a></li>
-					<li class="item"><a>(99) 9999-9999</a></li>
-					<li class="item"><a>petstore@petstore.com.br</a></li>
+					<li class="item"><a target="_blank" href="#">(99) 9999-9999</a></li>
+					<li class="item"><a target="_blank" href="#">(99) 9999-9999</a></li>
+					<li class="item"><a target="_blank" href="#">petstore@petstore.com.br</a></li>
 				</ul>	
 			</div>
 			<div class="contact">
