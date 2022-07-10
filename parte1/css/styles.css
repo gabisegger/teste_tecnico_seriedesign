@@ -708,4 +708,91 @@ main {
     .menu-hamburger {
         width: 25px;
     }
+
+
+
+
+
+    .benefits {
+        display: block;
+    }
+
+    .benefits .slick-slide {
+        display: inline-block;
+    }
+
+    .text-benefits {
+        justify-content: center;
+    }
+
+    .form-newsletter {
+        padding: 40px 0;
+    }
+
+    .title-newsletter {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .subtitle-newsletter {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .form-news {
+        display: grid;
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    .button-fixed {
+        right: 8px;
+    }
+
+    .button-whats, .button-seta {
+        width: 35px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        justify-items: center;
+        padding: 35px 0 15px;
+    }
+
+    .information {
+        padding-bottom: 15px;
+    }
+
+    .logo-footer {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .social-media {
+        margin-bottom: 15px;
+    }
+
+    .institutional, .contact {
+        text-align: center;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    .payments {
+        width: min-content;
+        margin: auto;
+    }
+
+    .container.center > * + * {
+        border-top: 1px solid #f0f0f0;
+    }
+
+    .copyright {
+        padding: 10px 0;
+    }
 }
