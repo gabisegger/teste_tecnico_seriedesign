@@ -245,7 +245,19 @@ main {
     position: relative;
 }
 
-.product img {
+.flags {
+    position: absolute;
+}
+
+.flag {
+    padding: 12px 19px;
+    background-color: #8158c5;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+}
+
+.product-image {
     max-width: 279px;
     padding-bottom: 17px;
 }
