@@ -406,6 +406,7 @@ main {
     border-bottom: 1px solid white;
     padding: 11px 1px;
     outline: none;
+    color: white;;
 }
 
 .txtNewsletter::placeholder{
@@ -503,6 +504,10 @@ main {
 .menu-footer {
     display: grid;
     gap: 20px;
+}
+
+.item a:hover {
+    text-decoration: underline;
 }
 
 .payments {
