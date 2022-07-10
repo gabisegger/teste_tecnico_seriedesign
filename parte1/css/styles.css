@@ -31,6 +31,29 @@ li {
     list-style: none;
 }
 
+header {
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    background: #ffffff;
+    top: 0;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    background: white;
+}
+
+.fixed .header {
+    height: 70px;
+}
+
+.fixed .logo {
+    width: 209px;
+    height: 53px;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -122,25 +145,94 @@ li {
     display: flex;
     align-items: center;
     padding: 0 15px;
-    font-size: 14px;
-    color: #ffffff;
+    position: relative;
     transition: all 0.3s;
 }
 
-.category:hover {
+.top-categories .category:nth-child(n+8) {
+    display: none;
+}
+
+.top-categories .menu-title {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.submenu {
+    background: white;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: max-content;
+    display: none;
+}
+
+.submenu-item {
+    line-height: 36px;
+    padding: 0 15px;
+    position: relative;
+}
+
+.level-3 {
+    position: absolute;
+    top: 0;
+    left: 167px;
+}
+
+.menu-hamburger {
+    cursor: pointer;
+}
+
+.all-categories {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+}
+
+.list-categories {
+    position: absolute;
+    background: white;
+    width: max-content;
+    top: 50px;
+    right: 0px;
+    display: none;
+}
+
+.all-categories .submenu {
+    right: 100%;
+    left: unset;
+    top: 0;
+}
+
+.all-categories:hover .list-categories{
+    display: block;
+}
+
+.submenu, .list-categories {
+   box-shadow: 0px 0px 6px 2px rgba(0 0 0 / 25%);
+}
+
+.submenu-item:hover {
+    background-color: #7f7f7f;
+}
+
+.submenu-item:hover > a {
+    color: #ffffff;
+}
+
+.top-categories .category:hover {
     background-color: #ffa200;
     color: #8158c5;
 }
 
-.menu-hamburger {
-    padding-left: 32px;
-    height: 22px;
-    margin: auto;
-    cursor: pointer;
+.has-dropdown:hover > .submenu {
+    display: block;
 }
 
 main {
     padding-bottom: 129px;
+    margin-top: 164px;
 }
 
 .block-1 {
@@ -546,5 +638,74 @@ main {
 
     .block-1 .slick-next {
         right: calc(50% - 578px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        zoom: .85;
+    }
+    .box-image {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .search {
+        width: 65px;
+        text-align: center;
+    }
+
+    #txtSearch {
+        display: none;
+    }
+
+    #lupa {
+        position: relative;
+        right: 0;
+        width: 20px;
+        left: 15px;
+    }
+
+    .logo {
+        width: 158px;
+        height: auto;
+    }
+
+    #header-actions {
+        gap: 5px;
+        width: 0;
+        margin-right: 5px;
+    }
+
+    #login {
+        width: 15px;
+        height: auto;
+    }
+
+    #carrinho {
+        width: 24px;
+        height: auto;
+    }
+
+    .navbar {
+        background-color: unset;
+    }
+
+    .top-categories {
+        display: none;
+    }
+
+    .all-categories {
+        padding-left: 0;
+    }
+
+    .menu-hamburger {
+        width: 25px;
     }
 }
