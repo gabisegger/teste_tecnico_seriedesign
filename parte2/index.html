@@ -26,6 +26,13 @@
 		<script>
 			console.log('resposta 1');
 			//insira a resposta aqui.
+				let divisiveisPor7 = []
+				for(i = 0; i <= 100; i++){
+					if([i] % 7 == 0){
+						divisiveisPor7.push(i)
+					}
+				}
+				console.log(divisiveisPor7)
 		</script>
 
 		<div class="border"></div>
@@ -35,6 +42,14 @@
 		<script>
 			console.log('resposta 2');
 			//insira a resposta aqui.
+			function multiplicaString(texto,vezes){
+				const textoFormatado = texto.trim() + ', '
+				const textoMultiplicado = textoFormatado.repeat(vezes)
+				const resultado = textoMultiplicado.replace(/, ([^, ]*)$/, '$1')
+				console.log(resultado)
+				return resultado
+			}
+			multiplicaString('Gabriela', 5)
 		</script>
 
 		<div class="border"></div>
@@ -50,6 +65,12 @@
 		<script>
 			console.log('resposta 3');
 			//insira a resposta aqui.
+			const divFilho = document.querySelector('.filho');
+			const divPai = document.querySelector('.pai');
+
+			divPai.appendChild(divFilho)
+
+			console.log(divPai)
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 4 ---->
@@ -69,6 +90,12 @@
 		<script>
 			console.log('resposta 4');
 			//insira a resposta aqui.
+			let alteraTexto = document.querySelector('p:nth-child(2)').innerHTML ="Texto alterado";
+			let newClass = document.querySelector('p:last-child');
+
+			newClass.classList.add('last')
+
+			console.log(alteraTexto, newClass)
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 5 ---->
@@ -78,6 +105,13 @@
 		<script>
 			console.log('resposta 5');
 			//insira a resposta aqui.
+			function maiorDeIdade(idade){
+				const age = idade > 18 ? "maior de idade" :  "menor de idade"
+				console.log(age);
+				return age
+			}
+			maiorDeIdade(19)
+			maiorDeIdade(10)
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 6 ---->
@@ -97,6 +131,12 @@
 				pesoObj: '150g'
 			}
 			//insira a resposta aqui.
+			function alteraObj (obj){
+				obj.nomeObj = 'Teclado'
+				obj.pesoObj = '500g'
+				console.log([obj])
+			}
+			alteraObj(obj)
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 7 ---->
@@ -111,6 +151,16 @@
 		<script>
 			console.log('resposta 7');
 			//insira a resposta aqui.
+			const string = 'Eu quero trabalhar na Seri.e Design';
+
+			const reverseString = string.split('').reverse().join('');
+			console.log(reverseString);
+			const lastWord = string.substring(string.lastIndexOf(" ")+1);
+			console.log(lastWord);
+			const caracteres = string.length;
+			console.log(caracteres);
+			const type = typeof caracteres;
+			console.log(type);
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 8 ---->
@@ -129,6 +179,13 @@
 		<script>
 			console.log('resposta 8');
 			//insira a resposta aqui.
+			function addAttribute(){
+				var teste1 = document.querySelectorAll('div')
+				for(i = 0; i < teste1.length; i++){
+					teste1[i].setAttribute("data-id", i + 1)   
+				}
+			}
+			addAttribute();
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 9 ---->
@@ -154,6 +211,11 @@
 		<script>
 			console.log('resposta 9');
 			//insira a resposta aqui.
+			$('.container ul li').on('click', function(){
+				$('.subcontainer > ul').css('display', 'block')
+				$('.container, .subcontainer').addClass('active')
+			})
+
 		</script>
 		<div class="border"></div>
 		<!--- PERGUNTA 10 ---->
@@ -187,7 +249,7 @@
 		</ol>
 		<!--- RESPOSTA 10 ---->
 		<div>
-			<p style="color: #F00;">RESPOSTA: </p>
+			<p style="color: #F00;">RESPOSTA: 4</p>
 		</div>
 	</div>
 </body>
