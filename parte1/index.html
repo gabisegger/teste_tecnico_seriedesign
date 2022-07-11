@@ -10,7 +10,7 @@
 	<link rel="shortcut icon" href="">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -25,6 +25,9 @@
 				<a href="#"><img src="./img/login.png" id="login" alt="Login"/></a>
 				<a href="#"><img src="./img/carrinho.png" id="carrinho" alt="Carrinho"/></a>
 				<span class="qtd">99</span>
+			</div>
+			<div class="added-to-cart">
+				&#10003;<p>Produto adicionado ao carrinho</p>
 			</div>
 		</div>
 		<nav class="navbar">
@@ -99,8 +102,11 @@
 					</li>
 				</ul>	
 				<div class="all-categories">
+					<div class="menu-all-categories">
 					<img src="./img/menu-hamburger.svg" class="menu-hamburger" alt="Menu"/>
+					</div>
 					<ul class="list-categories">
+						<span></span>
 						<li class="submenu-item">
 							<a href="#" class="menu-title">Categoria lorem</a>	
 						</li>
@@ -113,7 +119,7 @@
 								<li class="submenu-item">
 									<a href="#" class="submenu-title">Categoria lorem ipsum</a>
 								</li>
-								<li class="submenu-item has-dropdown">
+								<li class="submenu-item has-dropdown hide-mobile">
 									<a href="#" class="submenu-title">Categoria lorem</a>
 									<ul class="submenu level-3">
 										<li class="submenu-item">
@@ -195,7 +201,7 @@
 				<div class="products">
 					<div class="product">
 						<div class="box-image">
-							<img src="./img/product-1.jpg" class="product-image" alt="Produto 1"/>
+							<img src="./img/ração-whiskas.jpg" class="product-image" alt="Ração Whiskas"/>
 							<div class="box-btn-buy">
 								<button class="btn-buy">Compra rápida</button>
 							</div>
@@ -223,7 +229,7 @@
 					</div>
 					<div class="product">
 						<div class="box-image">
-							<img src="./img/product-3.jpg" class="product-image" alt="Produto 3"/>
+							<img src="./img/product-3.jpg" class="product-image" alt="Brinquedo para pet"/>
 							<div class="box-btn-buy">
 								<button class="btn-buy">Compra rápida</button>
 							</div>
@@ -251,7 +257,7 @@
 					</div>
 					<div class="product">
 						<div class="box-image">
-							<img src="./img/product-1.jpg" class="product-image" alt="Produto 1"/>
+							<img src="./img/racao-golden-gatos.jpg" class="product-image" alt="Ração golden gatos"/>
 							<div class="box-btn-buy">
 								<button class="btn-buy">Compra rápida</button>
 							</div>
@@ -266,7 +272,7 @@
 							<div class="flags">
 								<span class="flag">50% OFF</span>
 							</div>
-							<img src="./img/product-2.jpg" class="product-image" alt="Produto 2"/>
+							<img src="./img/racao-special-dog.jpg" class="product-image" alt="Ração Special Dog" />
 							<div class="box-btn-buy">
 								<button class="btn-buy">Compra rápida</button>
 							</div>
@@ -279,7 +285,7 @@
 					</div>
 					<div class="product">
 						<div class="box-image">
-							<img src="./img/product-3.jpg" class="product-image" alt="Produto 3"/>
+							<img src="./img/product-1.jpg" class="product-image" alt="Produto 1"/>
 							<div class="box-btn-buy">
 								<button class="btn-buy">Compra rápida</button>
 							</div>
@@ -287,22 +293,6 @@
 						<p class="description-product">Lorem ipsum dolor summit</p>
 						<div class="box-price">	
 							<p class="price"><span>R$ 99,99</span>R$ 99,99</p>
-						</div>
-					</div>
-					<div class="product">
-						<div class="box-image">
-							<div class="flags">
-								<span class="flag">Novo</span>
-							</div>
-							<img src="./img/product-4.jpg" class="product-image" alt="Produto 4"/>
-							<div class="box-btn-buy">
-								<button class="btn-buy">Compra rápida</button>
-							</div>
-						</div>
-						<p class="description-product">Lorem ipsum dolor summit</p>
-						<div class="box-price">	
-							<p class="price"><span>R$ 99,99</span>R$ 99,99</p>
-							<p class="installment-price">99x de R$ 99,99</p>
 						</div>
 					</div>
 				</div>
@@ -320,63 +310,7 @@
 				<div class="products destaques">
 					<div class="product">
 						<div class="box-image">
-							<img src="./img/product-1.jpg" class="product-image" alt="Produto 1"/>
-							<div class="box-btn-buy">
-								<button class="btn-buy">Compra rápida</button>
-							</div>
-						</div>
-						<p class="description-product">Lorem ipsum dolor summit</p>
-						<div class="box-price">
-							<p class="price">R$ 99,99</p>
-						</div>	
-					</div>
-					<div class="product">
-						<div class="box-image">
-							<div class="flags">
-								<span class="flag">50% OFF</span>
-							</div>
-							<img src="./img/product-2.jpg" class="product-image" alt="Produto 2"/>
-							<div class="box-btn-buy">
-								<button class="btn-buy">Compra rápida</button>
-							</div>
-						</div>
-						<p class="description-product">Lorem ipsum dolor summit</p>
-						<div class="box-price">
-							<p class="price">R$ 99,99</p>
-							<p class="installment-price">99x de R$ 99,99</p>
-						</div>
-					</div>
-					<div class="product">
-						<div class="box-image">
-							<img src="./img/product-3.jpg" class="product-image" alt="Produto 3"/>
-							<div class="box-btn-buy">
-								<button class="btn-buy">Compra rápida</button>
-							</div>
-						</div>
-						<p class="description-product">Lorem ipsum dolor summit</p>
-						<div class="box-price">	
-							<p class="price"><span>R$ 99,99</span>R$ 99,99</p>
-						</div>
-					</div>
-					<div class="product">
-						<div class="box-image">
-							<div class="flags">
-								<span class="flag">Novo</span>
-							</div>
-							<img src="./img/product-4.jpg" class="product-image" alt="Produto 4"/>
-							<div class="box-btn-buy">
-								<button class="btn-buy">Compra rápida</button>
-							</div>
-						</div>
-						<p class="description-product">Lorem ipsum dolor summit</p>
-						<div class="box-price">	
-							<p class="price"><span>R$ 99,99</span>R$ 99,99</p>
-							<p class="installment-price">99x de R$ 99,99</p>
-						</div>
-					</div>
-					<div class="product">
-						<div class="box-image">
-							<img src="./img/product-1.jpg" class="product-image" alt="Produto 1"/>
+							<img src="./img/ração-whiskas.jpg" class="product-image" alt="Ração Whiskas"/>
 							<div class="box-btn-buy">
 								<button class="btn-buy">Compra rápida</button>
 							</div>
@@ -404,7 +338,7 @@
 					</div>
 					<div class="product">
 						<div class="box-image">
-							<img src="./img/product-3.jpg" class="product-image" alt="Produto 3"/>
+							<img src="./img/product-3.jpg" class="product-image" alt="Brinquedo para pet"/>
 							<div class="box-btn-buy">
 								<button class="btn-buy">Compra rápida</button>
 							</div>
@@ -428,13 +362,53 @@
 						<div class="box-price">	
 							<p class="price"><span>R$ 99,99</span>R$ 99,99</p>
 							<p class="installment-price">99x de R$ 99,99</p>
+						</div>
+					</div>
+					<div class="product">
+						<div class="box-image">
+							<img src="./img/racao-golden-gatos.jpg" class="product-image" alt="Ração golden gatos"/>
+							<div class="box-btn-buy">
+								<button class="btn-buy">Compra rápida</button>
+							</div>
+						</div>
+						<p class="description-product">Lorem ipsum dolor summit</p>
+						<div class="box-price">
+							<p class="price">R$ 99,99</p>
+						</div>	
+					</div>
+					<div class="product">
+						<div class="box-image">
+							<div class="flags">
+								<span class="flag">50% OFF</span>
+							</div>
+							<img src="./img/racao-special-dog.jpg" class="product-image" alt="Ração Special Dog" />
+							<div class="box-btn-buy">
+								<button class="btn-buy">Compra rápida</button>
+							</div>
+						</div>
+						<p class="description-product">Lorem ipsum dolor summit</p>
+						<div class="box-price">
+							<p class="price">R$ 99,99</p>
+							<p class="installment-price">99x de R$ 99,99</p>
+						</div>	
+					</div>
+					<div class="product">
+						<div class="box-image">
+							<img src="./img/product-1.jpg" class="product-image" alt="Produto 1"/>
+							<div class="box-btn-buy">
+								<button class="btn-buy">Compra rápida</button>
+							</div>
+						</div>
+						<p class="description-product">Lorem ipsum dolor summit</p>
+						<div class="box-price">	
+							<p class="price"><span>R$ 99,99</span>R$ 99,99</p>
 						</div>
 					</div>
 				</div>
 				<div class="products hide-mobile">
 					<div class="product">
 						<div class="box-image">
-							<img src="./img/product-1.jpg" class="product-image" alt="Produto 1"/>
+							<img src="./img/ração-whiskas.jpg" class="product-image" alt="Ração Whiskas"/>
 							<div class="box-btn-buy">
 								<button class="btn-buy">Compra rápida</button>
 							</div>
@@ -462,7 +436,7 @@
 					</div>
 					<div class="product">
 						<div class="box-image">
-							<img src="./img/product-3.jpg" class="product-image" alt="Produto 3"/>
+							<img src="./img/product-3.jpg" class="product-image" alt="Brinquedo para pet"/>
 							<div class="box-btn-buy">
 								<button class="btn-buy">Compra rápida</button>
 							</div>
@@ -490,7 +464,7 @@
 					</div>
 					<div class="product">
 						<div class="box-image">
-							<img src="./img/product-1.jpg" class="product-image" alt="Produto 1"/>
+							<img src="./img/racao-golden-gatos.jpg" class="product-image" alt="Ração golden gatos"/>
 							<div class="box-btn-buy">
 								<button class="btn-buy">Compra rápida</button>
 							</div>
@@ -505,7 +479,7 @@
 							<div class="flags">
 								<span class="flag">50% OFF</span>
 							</div>
-							<img src="./img/product-2.jpg" class="product-image" alt="Produto 2"/>
+							<img src="./img/racao-special-dog.jpg" class="product-image" alt="Ração Special Dog" />
 							<div class="box-btn-buy">
 								<button class="btn-buy">Compra rápida</button>
 							</div>
@@ -518,7 +492,7 @@
 					</div>
 					<div class="product">
 						<div class="box-image">
-							<img src="./img/product-3.jpg" class="product-image" alt="Produto 3"/>
+							<img src="./img/product-1.jpg" class="product-image" alt="Produto 1"/>
 							<div class="box-btn-buy">
 								<button class="btn-buy">Compra rápida</button>
 							</div>
@@ -526,22 +500,6 @@
 						<p class="description-product">Lorem ipsum dolor summit</p>
 						<div class="box-price">	
 							<p class="price"><span>R$ 99,99</span>R$ 99,99</p>
-						</div>
-					</div>
-					<div class="product">
-						<div class="box-image">
-							<div class="flags">
-								<span class="flag">Novo</span>
-							</div>
-							<img src="./img/product-4.jpg" class="product-image" alt="Produto 4"/>
-							<div class="box-btn-buy">
-								<button class="btn-buy">Compra rápida</button>
-							</div>
-						</div>
-						<p class="description-product">Lorem ipsum dolor summit</p>
-						<div class="box-price">	
-							<p class="price"><span>R$ 99,99</span>R$ 99,99</p>
-							<p class="installment-price">99x de R$ 99,99</p>
 						</div>
 					</div>
 				</div>
