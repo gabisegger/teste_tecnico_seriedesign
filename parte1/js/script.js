@@ -13,19 +13,13 @@ $('.products').slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    //autoplay: true,
+    autoplay: true,
     autoplaySpeed: 5000,
     responsive: [
         {
           breakpoint: 1025,
           settings: {
-            dots: false,
-            arrows: false,
-            infinite: true,
             slidesToShow: 3,
-            slidesToScroll: 1,
-            //autoplay: true,
-            autoplaySpeed: 5000
           }
         },
         {
@@ -51,31 +45,38 @@ $(window).on('scroll', function(){
     }
 })
 
-$('.banner-categories').slick({
-    dots: false,
-    arrows: false,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    //autoplay: true,
-    autoplaySpeed: 5000,
-    responsive: [
-        {
-          breakpoint: 820,
-          settings: {
-            slidesToShow: 2
-        }}]
-
+//Click no botão compra rápida 
+$('.btn-buy').on('click', function(){
+    $(".added-to-cart").addClass('active');
+    setTimeout(function(){
+        $(".added-to-cart").removeClass('active');
+    },2000)
 })
 
+// JS Mobile
 if (window.screen.width <= 768) {
+    //Slick benefícios e banner de categorias
     $('.benefits, .banner-categories').slick({
         dots: false,
         arrows: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        //autoplay: true,
+        autoplay: true,
         autoplaySpeed: 5000,
     })
+
+    //Menu categorias mobile
+    $('.menu-all-categories').on('click', function(){
+        $('.list-categories').addClass('atv')
+    })
+
+    $('.list-categories > span').on('click', function(){
+        $('.list-categories').removeClass('atv')
+    })
+
+    $('.submenu-item.has-dropdown').on('click', function(){
+        $(this).toggleClass('active')
+    })
+
 }
