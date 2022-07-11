@@ -43,6 +43,7 @@ header {
     position: fixed;
     width: 100%;
     background: white;
+    box-shadow: 0px 0px 6px 2px rgba(0 0 0 / 25%);
 }
 
 .fixed .header {
@@ -287,6 +288,14 @@ main {
     display: inline-block;
 }
 
+.hide-desk {
+    display: none;
+}
+
+.hide-mobile {
+    display: block;
+}
+
 .fullbanner {
     display: block;
     width: 100%;
@@ -360,6 +369,7 @@ main {
 .product-image {
     max-width: 279px;
     padding-bottom: 17px;
+    width: 100%;
 }
 
 .box-btn-buy {
@@ -653,7 +663,16 @@ main {
 @media (max-width: 768px) {
     .header {
         height: auto;
-        padding: 15px 0;
+        padding: 10px 0;
+    }
+
+    .fixed .header {
+        height: 55px;
+    }
+
+    .fixed .logo {
+        width: 155px;
+        height: auto;
     }
 
     .search {
@@ -693,8 +712,14 @@ main {
         height: auto;
     }
 
-    .navbar {
-        background-color: unset;
+    .menu {
+        padding: 10px;
+    }
+
+    .menu.center::after {
+        content: "Todas as categorias";
+        padding-left: 5px;
+        color: white;
     }
 
     .top-categories {
@@ -705,16 +730,83 @@ main {
         padding-left: 0;
     }
 
+    .list-categories {
+        top: 25px;
+        left: 0;
+    }
+
+    .all-categories .submenu {
+        right: 0;
+        left: 100%;
+    }
+
     .menu-hamburger {
         width: 25px;
     }
 
+    main {
+        padding-bottom: 40px;
+        margin-top: 98.42px;
+    }
 
+    main .center {
+        padding: 0 10px;
+    }
 
+    .hide-desk {
+        display: block;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .block-1 .slick-arrow {
+        width: 40px;
+    }
+
+    .block-1 .slick-arrow::after {
+        height: 35px;
+    }
+
+    .block-1 .slick-next {
+        right: 20px;
+    }
+
+    .block-1 .slick-prev {
+        left: 20px;
+    }
+
+    .banner-categories {
+        display: block;
+    }
+
+    .banner-categories .slick-list {
+        overflow: hidden;
+    }
+
+    .banner-categories .slick-slide {
+        display: inline-block;
+    }
+
+    .category-banner {
+        width: 100%;
+        height: auto;
+    }
+
+    .block-4 {
+        padding-top: 60px; 
+    }
+
+    .pets {
+        gap: 10px;
+        grid-template-columns: 1fr;
+    }
 
 
     .benefits {
         display: block;
+        overflow: hidden;
     }
 
     .benefits .slick-slide {

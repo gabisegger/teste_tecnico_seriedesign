@@ -25,8 +25,14 @@ $('.products').slick({
             slidesToShow: 3,
             slidesToScroll: 1,
             //autoplay: true,
-            autoplaySpeed: 5000,
-            }
+            autoplaySpeed: 5000
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2
+          }
         }
     ]
 });
@@ -45,8 +51,25 @@ $(window).on('scroll', function(){
     }
 })
 
-if (window.screen.width < 768) {
-    $('.benefits').slick({
+$('.banner-categories').slick({
+    dots: false,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    //autoplay: true,
+    autoplaySpeed: 5000,
+    responsive: [
+        {
+          breakpoint: 820,
+          settings: {
+            slidesToShow: 2
+        }}]
+
+})
+
+if (window.screen.width <= 768) {
+    $('.benefits, .banner-categories').slick({
         dots: false,
         arrows: false,
         infinite: true,
